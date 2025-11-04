@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balaji Mukkawar - AI Engineer Portfolio</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑‍💻</text></svg>">
     <style>
         * {
             margin: 0;
@@ -1075,7 +1074,7 @@
                 <h3>C++ Training</h3>
                 <p class="cert-org">Programming Fundamentals</p>
                 <p class="cert-desc">Advanced training in C++ programming, OOP concepts, and data structures</p>
-                <a href="https://drive.google.com/file/d/1HKbR-_TDDUDTlP4GFDsGZkYmWHy7q0pX/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <a href="httpshttps://drive.google.com/file/d/1HKbR-_TDDUDTlP4GFDsGZkYmWHy7q0pX/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
             </div>
 
             <div class="cert-item">
@@ -1143,21 +1142,24 @@
     <section id="contact" class="reveal">
         <h2>Let's Connect</h2>
         <div class="contact-container">
-            <form class="contact-form">
+            <!-- ===== FORM FIXED FOR DEPLOYMENT ===== -->
+            <!-- To make this form work, you MUST replace the action URL with your own from Formspree.io -->
+            <form class="contact-form" action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your name" required>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="your.email@example.com" required>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" placeholder="Your message..." required></textarea>
+                    <textarea id="message" name="message" placeholder="Your message..." required></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
+            <!-- ======================================= -->
 
             <div class="social-links">
                 <a href="mailto:balajimukkawar2005@gmail.com" class="social-link">📧 Email</a>
@@ -1232,7 +1234,11 @@
         window.addEventListener('scroll', checkReveal);
         checkReveal(); // Check on load
 
-        // Form submission
+        // ===== IMPORTANT: NON-FUNCTIONAL FORM SCRIPT REMOVED =====
+        // The original JavaScript for the form was removed because it PREVENTED the form from submitting.
+        // By using the 'action' attribute in the HTML form tag, the form will now submit correctly via Formspree.
+        // The original script is commented out below for reference.
+        /*
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -1248,6 +1254,7 @@
                 this.reset();
             }, 3000);
         });
+        */
 
         // Add hover effect to skill tags
         document.querySelectorAll('.skill-tag').forEach(tag => {
@@ -1318,7 +1325,9 @@
                     animation: ripple-effect 0.6s ease-out;
                 `;
                 
-                this.style.position = 'relative';
+                if (this.style.position !== 'relative') {
+                   this.style.position = 'relative';
+                }
                 this.style.overflow = 'hidden';
                 this.appendChild(ripple);
                 
@@ -1351,7 +1360,7 @@
                     element.textContent = target;
                     clearInterval(timer);
                 } else {
-                    element.textContent = Math.floor(current * 10) / 10;
+                    element.textContent = (Math.floor(current * 10) / 10).toFixed(1);
                 }
             }, 16);
         }
