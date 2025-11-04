@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,12 +52,15 @@
                 opacity: 0;
                 transform: translateY(100vh) scale(0);
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 opacity: 0;
                 transform: translateY(-100vh) scale(1);
@@ -154,6 +158,7 @@
                 opacity: 0;
                 transform: scale(0.8) translateY(50px);
             }
+
             100% {
                 opacity: 1;
                 transform: scale(1) translateY(0);
@@ -172,8 +177,15 @@
         }
 
         @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
         }
 
         .hero .subtitle {
@@ -203,6 +215,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -213,6 +226,8 @@
             display: flex;
             gap: 20px;
             animation: fadeIn 1s ease-out 0.9s backwards;
+            justify-content: center;
+            /* Add this line */
         }
 
         .cta-button {
@@ -320,8 +335,15 @@
         }
 
         @keyframes float-profile {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         .profile-img:hover {
@@ -617,7 +639,8 @@
             font-size: 24px;
         }
 
-        .info-card p, .info-card ul {
+        .info-card p,
+        .info-card ul {
             color: #cbd5e1;
             line-height: 1.8;
         }
@@ -781,18 +804,48 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 36px; }
-            .hero .subtitle { font-size: 20px; }
-            .about-grid { grid-template-columns: 1fr; }
-            .profile-img { width: 250px; height: 250px; margin: 0 auto; }
-            nav { padding: 15px 20px; }
-            .nav-links { gap: 15px; font-size: 14px; }
-            section { padding: 60px 20px; }
-            h2 { font-size: 32px; }
-            .cta-buttons { flex-direction: column; }
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .subtitle {
+                font-size: 20px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-img {
+                width: 250px;
+                height: 250px;
+                margin: 0 auto;
+            }
+
+            nav {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="bg-animation"></div>
 
@@ -826,14 +879,18 @@
         <div class="about-grid">
             <div class="profile-img">🤖</div>
             <div class="about-text">
-                <p>I'm a passionate AI & Machine Learning Engineer in my third year of B.Tech in Computer Science and Business Systems at JSPM's Rajarshi Shahu College of Engineering, Pune. With a stellar CGPA of 9.7, I've consistently maintained academic excellence.</p>
-                
+                <p>I'm a passionate AI & Machine Learning Engineer in my third year of B.Tech in Computer Science and
+                    Business Systems at JSPM's Rajarshi Shahu College of Engineering, Pune. With a stellar CGPA of 9.7,
+                    I've consistently maintained academic excellence.</p>
+
                 <h3>🎯 Academic Journey</h3>
-                <p>Pursuing a minor in Electronics and Telecommunication, I bridge hardware and software domains. My expertise spans Generative AI, Machine Learning, Deep Learning, and Natural Language Processing.</p>
-                
+                <p>Pursuing a minor in Electronics and Telecommunication, I bridge hardware and software domains. My
+                    expertise spans Generative AI, Machine Learning, Deep Learning, and Natural Language Processing.</p>
+
                 <h3>💡 Beyond Technology</h3>
-                <p>I relate ancient Indian knowledge with modern science and write poems and articles in Marathi. As founder of RSCOE Mathematics Club, I lead with passion and innovation.</p>
-                
+                <p>I relate ancient Indian knowledge with modern science and write poems and articles in Marathi. As
+                    founder of RSCOE Mathematics Club, I lead with passion and innovation.</p>
+
                 <h3>🌟 Core Strengths</h3>
                 <p>Leadership • Critical Thinking • Design • Imagination • Problem Solving</p>
             </div>
@@ -1008,7 +1065,8 @@
         <div class="info-card">
             <h3>💼 AI Engineer Intern - Shivohini Tech AI LLP</h3>
             <p><strong>Duration:</strong> 6 Months (Currently Ongoing)</p>
-            <p><strong>Work:</strong> Developing multiple GenAI projects including AI agents, chatbots, RAG-based systems, and real-world applications.</p>
+            <p><strong>Work:</strong> Developing multiple GenAI projects including AI agents, chatbots, RAG-based
+                systems, and real-world applications.</p>
             <p><strong>Skills Used:</strong> Generative AI, Python, NLP, Machine Learning, API Integration</p>
         </div>
 
@@ -1034,7 +1092,8 @@
                 <h3>Letter of Appreciation</h3>
                 <p class="cert-org">Shivohini Tech AI LLP</p>
                 <p class="cert-desc">Recognition for outstanding performance during AI Engineer Internship</p>
-                <a href="https://drive.google.com/file/d/1i4MfCFan0OxlQqb-IJM2QBIzUIQtrNSN/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <a href="https://drive.google.com/file/d/1i4MfCFan0OxlQqb-IJM2QBIzUIQtrNSN/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate →</a>
             </div>
 
             <div class="cert-item">
@@ -1042,15 +1101,18 @@
                 <h3>First Rank - First Year</h3>
                 <p class="cert-org">JSPM's RSCOE</p>
                 <p class="cert-desc">Achieved First Rank in First Year with exceptional academic performance</p>
-                <a href="https://drive.google.com/file/d/1scWgM6k_RRqO-v7eyA4tmVC-pLd-t6or/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <a href="https://drive.google.com/file/d/1scWgM6k_RRqO-v7eyA4tmVC-pLd-t6or/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate →</a>
             </div>
 
             <div class="cert-item">
                 <div class="cert-icon">🥉</div>
                 <h3>Second Runner-up</h3>
                 <p class="cert-org">CodeArena Coding Event</p>
-                <p class="cert-desc">Secured 3rd position in competitive coding competition demonstrating problem-solving skills</p>
-                <a href="https://drive.google.com/file/d/1JoZmaD0TSvukWj3_YqxvYH2ZUseY47f-/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <p class="cert-desc">Secured 3rd position in competitive coding competition demonstrating
+                    problem-solving skills</p>
+                <a href="https://drive.google.com/file/d/1JoZmaD0TSvukWj3_YqxvYH2ZUseY47f-/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate →</a>
             </div>
 
             <div class="cert-item">
@@ -1058,7 +1120,8 @@
                 <h3>Math Pitch Competition</h3>
                 <p class="cert-org">University Level Representation</p>
                 <p class="cert-desc">Represented college at university level mathematics presentation competition</p>
-                <a href="https://drive.google.com/file/d/1qmExnwXgOKMyustzr-pX4d8H1I0BIUap/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <a href="https://drive.google.com/file/d/1qmExnwXgOKMyustzr-pX4d8H1I0BIUap/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate →</a>
             </div>
 
             <div class="cert-item">
@@ -1066,7 +1129,8 @@
                 <h3>Soft Skills & Personality</h3>
                 <p class="cert-org">Professional Development</p>
                 <p class="cert-desc">Completed comprehensive course on soft skills and personality development</p>
-                <a href="https://drive.google.com/file/d/1DCMBwkyyAoxGfiEnG6JGmG9Sg2mx_8Z7/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <a href="https://drive.google.com/file/d/1DCMBwkyyAoxGfiEnG6JGmG9Sg2mx_8Z7/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate →</a>
             </div>
 
             <div class="cert-item">
@@ -1074,15 +1138,18 @@
                 <h3>C++ Training</h3>
                 <p class="cert-org">Programming Fundamentals</p>
                 <p class="cert-desc">Advanced training in C++ programming, OOP concepts, and data structures</p>
-                <a href="httpshttps://drive.google.com/file/d/1HKbR-_TDDUDTlP4GFDsGZkYmWHy7q0pX/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <a href="httpshttps://drive.google.com/file/d/1HKbR-_TDDUDTlP4GFDsGZkYmWHy7q0pX/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate →</a>
             </div>
 
             <div class="cert-item">
                 <div class="cert-icon">🚀</div>
                 <h3>VSM Hackathon</h3>
                 <p class="cert-org">Hackathon Participation</p>
-                <p class="cert-desc">Participated in VSM Hackathon, building innovative solutions under time constraints</p>
-                <a href="https://drive.google.com/file/d/1HOaEE0FtwpEHnBOviYhnDMWkIc0RKvCu/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <p class="cert-desc">Participated in VSM Hackathon, building innovative solutions under time constraints
+                </p>
+                <a href="https://drive.google.com/file/d/1HOaEE0FtwpEHnBOviYhnDMWkIc0RKvCu/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate →</a>
             </div>
 
             <div class="cert-item">
@@ -1090,7 +1157,8 @@
                 <h3>Innovation Organization</h3>
                 <p class="cert-org">Core Team Member</p>
                 <p class="cert-desc">Active core team member contributing to innovation and technical initiatives</p>
-                <a href="https://drive.google.com/file/d/1scWgM6k_RRqO-v7eyA4tmVC-pLd-t6or/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <a href="https://drive.google.com/file/d/1scWgM6k_RRqO-v7eyA4tmVC-pLd-t6or/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate →</a>
             </div>
 
             <div class="cert-item">
@@ -1098,7 +1166,8 @@
                 <h3>Recursion 2024 Volunteer</h3>
                 <p class="cert-org">Event Management</p>
                 <p class="cert-desc">Volunteered for Recursion 2024, contributing to successful event execution</p>
-                <a href="https://drive.google.com/file/d/1jbLfw8b7dXYrKv8BEBfVfcaaJPGH2tr8/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <a href="https://drive.google.com/file/d/1jbLfw8b7dXYrKv8BEBfVfcaaJPGH2tr8/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate →</a>
             </div>
 
             <div class="cert-item">
@@ -1106,15 +1175,18 @@
                 <h3>SQL Basics</h3>
                 <p class="cert-org">Database Fundamentals</p>
                 <p class="cert-desc">Completed SQL basics course covering queries, joins, and database management</p>
-                <a href="https://drive.google.com/file/d/1oQlBPs5WbVs1O55Tyt6ZQlKTYuZBu346/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <a href="https://drive.google.com/file/d/1oQlBPs5WbVs1O55Tyt6ZQlKTYuZBu346/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate →</a>
             </div>
 
             <div class="cert-item">
                 <div class="cert-icon">🔒</div>
                 <h3>Introduction to Cybersecurity</h3>
                 <p class="cert-org">Security Fundamentals</p>
-                <p class="cert-desc">Foundation course in cybersecurity principles, threats, and protection mechanisms</p>
-                <a href="https://drive.google.com/file/d/1A3OoPmzUm78L6VppV4q0RLBYo5sxVqtH/view?usp=drive_link" target="_blank" class="cert-link">View Certificate →</a>
+                <p class="cert-desc">Foundation course in cybersecurity principles, threats, and protection mechanisms
+                </p>
+                <a href="https://drive.google.com/file/d/1A3OoPmzUm78L6VppV4q0RLBYo5sxVqtH/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate →</a>
             </div>
         </div>
     </section>
@@ -1124,12 +1196,14 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
             <div class="info-card">
                 <h3>📝 Creative Writing</h3>
-                <p>Passionate writer creating poems and articles in Marathi, blending creativity with cultural heritage.</p>
+                <p>Passionate writer creating poems and articles in Marathi, blending creativity with cultural heritage.
+                </p>
             </div>
 
             <div class="info-card">
                 <h3>🔬 Ancient & Modern Science</h3>
-                <p>Deeply interested in relating ancient Indian knowledge with modern scientific concepts and discoveries.</p>
+                <p>Deeply interested in relating ancient Indian knowledge with modern scientific concepts and
+                    discoveries.</p>
             </div>
 
             <div class="info-card">
@@ -1163,13 +1237,15 @@
 
             <div class="social-links">
                 <a href="mailto:balajimukkawar2005@gmail.com" class="social-link">📧 Email</a>
-                <a href="https://www.linkedin.com/in/balaji-mukkawar-498b982b7/" target="_blank" class="social-link">💼 LinkedIn</a>
+                <a href="https://www.linkedin.com/in/balaji-mukkawar-498b982b7/" target="_blank" class="social-link">💼
+                    LinkedIn</a>
                 <a href="https://github.com/BalajiSMukkawar" target="_blank" class="social-link">💻 GitHub</a>
                 <a href="https://www.instagram.com/vijay_mukkawar" target="_blank" class="social-link">📸 Instagram</a>
             </div>
 
             <div class="resume-section">
-                <a href="https://drive.google.com/file/d/1alxk1OmZewouGxi1HHOQQ4i-J51fb4iL/view?usp=drive_link" target="_blank" class="resume-btn">
+                <a href="https://drive.google.com/file/d/1alxk1OmZewouGxi1HHOQQ4i-J51fb4iL/view?usp=drive_link"
+                    target="_blank" class="resume-btn">
                     📄 Download Resume
                 </a>
             </div>
@@ -1219,12 +1295,12 @@
 
         // Reveal animations on scroll
         const reveals = document.querySelectorAll('.reveal');
-        
+
         function checkReveal() {
             reveals.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
                 const elementVisible = 100;
-                
+
                 if (elementTop < window.innerHeight - elementVisible) {
                     element.classList.add('active');
                 }
@@ -1258,10 +1334,10 @@
 
         // Add hover effect to skill tags
         document.querySelectorAll('.skill-tag').forEach(tag => {
-            tag.addEventListener('mouseenter', function() {
+            tag.addEventListener('mouseenter', function () {
                 this.style.transform = 'scale(1.15) rotate(5deg)';
             });
-            tag.addEventListener('mouseleave', function() {
+            tag.addEventListener('mouseleave', function () {
                 this.style.transform = 'scale(1) rotate(0deg)';
             });
         });
@@ -1293,25 +1369,25 @@
                 opacity: 0.6;
             `;
             document.body.appendChild(cursor);
-            
+
             setTimeout(() => {
                 cursor.style.transition = 'opacity 0.5s, transform 0.5s';
                 cursor.style.opacity = '0';
                 cursor.style.transform = 'scale(2)';
             }, 100);
-            
+
             setTimeout(() => cursor.remove(), 600);
         });
 
         // Add click ripple effect to buttons
         document.querySelectorAll('.cta-button, .submit-btn, .social-link, .resume-btn').forEach(button => {
-            button.addEventListener('click', function(e) {
+            button.addEventListener('click', function (e) {
                 const ripple = document.createElement('span');
                 const rect = this.getBoundingClientRect();
                 const size = Math.max(rect.width, rect.height);
                 const x = e.clientX - rect.left - size / 2;
                 const y = e.clientY - rect.top - size / 2;
-                
+
                 ripple.style.cssText = `
                     position: absolute;
                     width: ${size}px;
@@ -1324,13 +1400,13 @@
                     transform: scale(0);
                     animation: ripple-effect 0.6s ease-out;
                 `;
-                
+
                 if (this.style.position !== 'relative') {
-                   this.style.position = 'relative';
+                    this.style.position = 'relative';
                 }
                 this.style.overflow = 'hidden';
                 this.appendChild(ripple);
-                
+
                 setTimeout(() => ripple.remove(), 600);
             });
         });
@@ -1353,7 +1429,7 @@
             const duration = 2000;
             const increment = target / (duration / 16);
             let current = 0;
-            
+
             const timer = setInterval(() => {
                 current += increment;
                 if (current >= target) {
@@ -1389,4 +1465,5 @@
         console.log('%cLet\'s connect: balajimukkawar2005@gmail.com', 'color: #ec4899; font-size: 14px;');
     </script>
 </body>
+
 </html>
